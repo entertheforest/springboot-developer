@@ -5,7 +5,9 @@ import lombok.RequiredArgsConstructor;
 import me.shinsunyoung.springbootdeveloper.domain.Article;
 import me.shinsunyoung.springbootdeveloper.dto.AddArticleRequest;
 import me.shinsunyoung.springbootdeveloper.dto.ArticleResponse;
+import me.shinsunyoung.springbootdeveloper.dto.UpdateArticleRequest;
 import me.shinsunyoung.springbootdeveloper.service.BlogService;
+import org.hibernate.annotations.Parameter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -42,7 +44,7 @@ public class BlogApiController {
 
     }
 
-    @GetMapping("/api/article'{id}")  //URL 에서 {id}에 해당하는 값이 id로 들어옴
+    @GetMapping("/api/articles/{id}")  //URL 에서 {id}에 해당하는 값이 id로 들어옴
     // URL 경로에서 값 추출
     public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id){
         Article article = blogService.findById(id);
@@ -51,8 +53,21 @@ public class BlogApiController {
                 .body(new ArticleResponse(article));
     }
 
+    @DeleteMapping("/api/articles/{id}")
+    public ResponseEntity<Void> deleteArticle(@PathVariable long id){
+        blogService.delete(id);
 
+        return ResponseEntity.ok()
+                .build();
+    }
 
+    @PutMapping("/api/articles/{id}")
+    public ResponseEntity<Article> updateArticle(@PathVariable long id,
+                                                 @RequestBody UpdateArticleRequest request){
+        Article updatedArticle = blogService.update(id, request);
 
+        return ResponseEntity.ok()
+                .body(updatedArticle);
+    }
 
 }

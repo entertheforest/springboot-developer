@@ -1,10 +1,10 @@
-package me.shinsunyoung.springbootdeveloper.service;
+package me.soo.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
-import me.shinsunyoung.springbootdeveloper.dto.AddArticleRequest;
-import me.shinsunyoung.springbootdeveloper.dto.UpdateArticleRequest;
-import me.shinsunyoung.springbootdeveloper.repository.BlogRepository;
+import me.soo.springbootdeveloper.domain.Article;
+import me.soo.springbootdeveloper.dto.AddArticleRequest;
+import me.soo.springbootdeveloper.dto.UpdateArticleRequest;
+import me.soo.springbootdeveloper.repository.BlogRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

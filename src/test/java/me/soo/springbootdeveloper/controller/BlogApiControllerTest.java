@@ -1,10 +1,10 @@
-package me.shinsunyoung.springbootdeveloper.controller;
+package me.soo.springbootdeveloper.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
-import me.shinsunyoung.springbootdeveloper.dto.AddArticleRequest;
-import me.shinsunyoung.springbootdeveloper.dto.UpdateArticleRequest;
-import me.shinsunyoung.springbootdeveloper.repository.BlogRepository;
+import me.soo.springbootdeveloper.domain.Article;
+import me.soo.springbootdeveloper.dto.AddArticleRequest;
+import me.soo.springbootdeveloper.dto.UpdateArticleRequest;
+import me.soo.springbootdeveloper.repository.BlogRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

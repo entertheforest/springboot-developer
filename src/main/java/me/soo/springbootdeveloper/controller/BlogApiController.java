@@ -1,13 +1,11 @@
-package me.shinsunyoung.springbootdeveloper.controller;
+package me.soo.springbootdeveloper.controller;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
-import me.shinsunyoung.springbootdeveloper.dto.AddArticleRequest;
-import me.shinsunyoung.springbootdeveloper.dto.ArticleResponse;
-import me.shinsunyoung.springbootdeveloper.dto.UpdateArticleRequest;
-import me.shinsunyoung.springbootdeveloper.service.BlogService;
-import org.hibernate.annotations.Parameter;
+import me.soo.springbootdeveloper.domain.Article;
+import me.soo.springbootdeveloper.dto.AddArticleRequest;
+import me.soo.springbootdeveloper.dto.ArticleResponse;
+import me.soo.springbootdeveloper.dto.UpdateArticleRequest;
+import me.soo.springbootdeveloper.service.BlogService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

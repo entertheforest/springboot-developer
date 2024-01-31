@@ -1,9 +1,9 @@
-package me.shinsunyoung.springbootdeveloper.dto;
+package me.soo.springbootdeveloper.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import me.shinsunyoung.springbootdeveloper.domain.Article;
+import me.soo.springbootdeveloper.domain.Article;
 
 @NoArgsConstructor
 @AllArgsConstructor

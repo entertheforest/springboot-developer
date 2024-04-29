@@ -11,4 +11,6 @@ spring:
   h2: # H2 콘솔 화렁화
     console:
       enable: true
-
+jwt:
+  issuer: ajufresh@gmail.com
+  secret_key: study-springboot
